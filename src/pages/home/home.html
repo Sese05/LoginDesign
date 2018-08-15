@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Profile Creater
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="creater" padding>
+ 
+  <button round  ion-button color="sweet" style="float: right;" (click)="register()">Create Profile</button>
+  <ion-list>
+      <ion-item *ngFor="let detail of details" (click)="viewDetails(detail)">{{detail.firstName}}</ion-item>
+  </ion-list>
+   
+
+</ion-content>
